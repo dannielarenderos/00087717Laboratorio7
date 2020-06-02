@@ -177,7 +177,7 @@ Matrix createLocalK(int e,mesh &m){
 
     //Preparando matrixE (En clase conocida simplemente como E)
   
-    productRealMatrix(2*J/(6*D),productMatrixMatrix(BPrimat,productMatrixMatrix(Alphat,g_matrix_t,2,2,6),3,2,6),matrixE);
+    productRealMatrix(J/(6*D),productMatrixMatrix(BPrimat,productMatrixMatrix(Alphat,g_matrix_t,2,2,6),3,2,6),matrixE);
 
     //Colocando submatrices en K
     zeroes(K,9);
