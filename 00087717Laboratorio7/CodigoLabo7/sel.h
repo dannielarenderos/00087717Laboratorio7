@@ -173,7 +173,7 @@ Matrix createLocalK(int e,mesh &m){
 
     //Preparando matrixD(En clase conocida simplemente como D)
     Y = m.getParameter(Ye);
-    productRealMatrix(J*2/(6*Y*D*3),productMatrixMatrix(g_matrix,productMatrixMatrix(Alpha,BPrima,2,2,3),6,2,3),matrixD);
+    productRealMatrix(J*2*Y/(6*D*3),productMatrixMatrix(g_matrix,productMatrixMatrix(Alpha,BPrima,2,2,3),6,2,3),matrixD);
 
     //Preparando matrixE (En clase conocida simplemente como E)
   
