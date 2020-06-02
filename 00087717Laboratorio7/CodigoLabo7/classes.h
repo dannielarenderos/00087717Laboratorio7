@@ -1,6 +1,6 @@
 enum lines {NOLINE,SINGLELINE,DOUBLELINE};
 enum modes {NOMODE,INT_FLOAT,INT_FLOAT_FLOAT,INT_INT_INT_INT};
-enum parameters {Te,Ka,Se,Ye, EXTERNAL_FORCE_X,EXTERNAL_FORCE_Y,Ne};
+enum parameters {Te,Ka,Ye,EXTERNAL_FORCE_X,EXTERNAL_FORCE_Y, Se, Ne};
 enum sizes {NODES,ELEMENTS,DIRICHLET};
 enum coords {EQUIS,YE};
 
@@ -117,7 +117,7 @@ class mesh{
         condition *dirichlet_list;
         //condition *neumann_list;
     public:
-        void setParameters(float T,float K, float S, float Y, float f_x, float f_y, float N){
+        void setParameters(float T,float K, float Y, float f_x, float f_y, float S, float N){
             parameters[Te]=T;
             parameters[Ka]=K;
             parameters[Se]=S;
